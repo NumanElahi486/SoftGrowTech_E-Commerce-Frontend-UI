@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopHub  E-Commerce</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="#home" class="logo">
+                Shop<span>Hub</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#categories">Categories</a>
+                <a href="#about">About</a>
+            </nav>
+
+            <div class="nav-actions">
+
+            
+                <button class="icon-btn" id="navSearchBtn" title="Search">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <path d="M20 20L16 16"></path>
+                    </svg>
+                </button>
+
+            
+                <button class="icon-btn" id="themeBtn" title="Dark Mode">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2V4"></path>
+                        <path d="M12 20V22"></path>
+                        <path d="M4.93 4.93L6.34 6.34"></path>
+                        <path d="M17.66 17.66L19.07 19.07"></path>
+                        <path d="M2 12H4"></path>
+                        <path d="M20 12H22"></path>
+                        <path d="M4.93 19.07L6.34 17.66"></path>
+                        <path d="M17.66 6.34L19.07 4.93"></path>
+                    </svg>
+                </button>
+
+                
+                <button class="icon-btn wishlist-btn" id="wishlistBtn" title="Wishlist">
+
+                    <svg viewBox="0 0 24 24">
+                        <path d="M20.8 8.7C20.8 13.5 12 20 12 20S3.2 13.5 3.2 8.7C3.2 5.7 5.4 4 8 4C9.7 4 11.2 4.8 12 6C12.8 4.8 14.3 4 16 4C18.6 4 20.8 5.7 20.8 8.7Z"></path>
+                    </svg>
+
+                    <span id="wishlistCount">0</span>
+
+                </button>
+
+                
+                <button class="cart-btn" id="cartBtn">
+
+                    <svg viewBox="0 0 24 24">
+                        <path d="M3 4H5L7.5 16H19L21 8H6"></path>
+                        <circle cx="9" cy="20" r="1.5"></circle>
+                        <circle cx="18" cy="20" r="1.5"></circle>
+                    </svg>
+
+                    <span>Cart</span>
+
+                    <strong id="cartCount">0</strong>
+
+                </button>
+
+            </div>
+
+        
+            <button class="mobile-menu" id="mobileMenu">
+
+                <svg viewBox="0 0 24 24">
+                    <path d="M4 6H20"></path>
+                    <path d="M4 12H20"></path>
+                    <path d="M4 18H20"></path>
+                </svg>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <div class="mobile-nav" id="mobileNav">
+
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+
+    </div>
+
+
+    
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <span class="hero-label">
+                    NEW COLLECTION
+                </span>
+
+                <h1>
+                    Everything you need,
+                    <span>all in one place.</span>
+                </h1>
+
+                <p>
+                    Discover premium products, modern essentials
+                    and everyday favorites designed for your lifestyle.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#products" class="btn btn-primary">
+                        Shop Now
+                    </a>
+
+                    <a href="#categories" class="btn btn-outline">
+                        Explore Categories
+                    </a>
+
+                </div>
+
+                <div class="hero-info">
+
+                    <div>
+                        <strong>10K+</strong>
+                        <span>Products</span>
+                    </div>
+
+                    <div>
+                        <strong>25K+</strong>
+                        <span>Customers</span>
+                    </div>
+
+                    <div>
+                        <strong>4.8/5</strong>
+                        <span>Rating</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <img
+                    src="./images/Headphone.jpg"
+                    alt="Premium headphones"
+                >
+
+                <div class="hero-product-card">
+
+                    <span>Featured</span>
+
+                    <strong>Premium Headphones</strong>
+
+                    <div>
+                        <b>Rs. 12,999</b>
+                        <del>Rs. 16,999</del>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="features">
+
+            <div class="feature">
+
+                <div class="feature-icon">
+
+                    <svg viewBox="0 0 24 24">
+                        <path d="M3 7H15V17H3Z"></path>
+                        <path d="M15 10H19L21 13V17H15Z"></path>
+                        <circle cx="7" cy="18" r="2"></circle>
+                        <circle cx="18" cy="18" r="2"></circle>
+                    </svg>
+
+                </div>
+
+                <div>
+                    <strong>Free Shipping</strong>
+                    <span>On orders over Rs. 5,000</span>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+
+                    <svg viewBox="0 0 24 24">
+                        <path d="M20 12A8 8 0 1 1 12 4"></path>
+                        <path d="M12 8V12L15 14"></path>
+                    </svg>
+
+                </div>
+
+                <div>
+                    <strong>Easy Returns</strong>
+                    <span>30 days return policy</span>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+
+                    <svg viewBox="0 0 24 24">
+                        <rect x="4" y="10" width="16" height="11" rx="2"></rect>
+                        <path d="M8 10V7A4 4 0 0 1 16 7V10"></path>
+                    </svg>
+
+                </div>
+
+                <div>
+                    <strong>Secure Payment</strong>
+                    <span>100% secure checkout</span>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+
+                    <svg viewBox="0 0 24 24">
+                        <path d="M21 15A4 4 0 0 1 17 19H8L4 22V7A4 4 0 0 1 8 3H17A4 4 0 0 1 21 7Z"></path>
+                    </svg>
+
+                </div>
+
+                <div>
+                    <strong>24/7 Support</strong>
+                    <span>We're here to help</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="section" id="categories">
+
+            <div class="section-heading">
+
+                <div>
+                    <span>SHOP BY CATEGORY</span>
+                    <h2>Find what you're looking for</h2>
+                </div>
+
+            </div>
+
+
+            <div class="categories-grid">
+
+                <button class="category-card" data-category="Electronics">
+
+                    <img
+                        src="./images/Earbuds.jpg"
+                        alt="Electronics"
+                    >
+
+                    <div>
+                        <h3>Electronics</h3>
+                        <span>Latest technology</span>
+                    </div>
+
+                </button>
+
+
+                <button class="category-card" data-category="Fashion">
+
+                    <img
+                        src="./images/Fasion.jpg"
+                        alt="Fashion"
+                    >
+
+                    <div>
+                        <h3>Fashion</h3>
+                        <span>Modern style</span>
+                    </div>
+
+                </button>
+
+
+                <button class="category-card" data-category="Shoes">
+
+                    <img
+                        src="./images/Shoes.jpg"
+                        alt="Shoes"
+                    >
+
+                    <div>
+                        <h3>Shoes</h3>
+                        <span>Walk in comfort</span>
+                    </div>
+
+                </button>
+
+
+                <button class="category-card" data-category="Accessories">
+
+                    <img
+                        src="./images/Watch.jpg"
+                        alt="Accessories"
+                    >
+
+                    <div>
+                        <h3>Accessories</h3>
+                        <span>Complete your look</span>
+                    </div>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="section products-section" id="products">
+
+            <div class="section-heading">
+
+                <div>
+                    <span>OUR COLLECTION</span>
+                    <h2>Popular Products</h2>
+                </div>
+
+                <p>
+                    Explore our most popular products
+                    selected for you.
+                </p>
+
+            </div>
+
+
+        
+
+            <div class="filters">
+
+                <div class="search-box">
+
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <path d="M20 20L16 16"></path>
+                    </svg>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search products..."
+                    >
+
+                </div>
+
+
+                <select id="categoryFilter">
+
+                    <option value="All">All Categories</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Fashion">Fashion</option>
+                    <option value="Shoes">Shoes</option>
+                    <option value="Accessories">Accessories</option>
+
+                </select>
+
+
+                <select id="sortFilter">
+
+                    <option value="default">Sort By</option>
+                    <option value="low">Price: Low to High</option>
+                    <option value="high">Price: High to Low</option>
+                    <option value="rating">Highest Rated</option>
+                    <option value="name">Name A-Z</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="products-layout">
+
+            
+
+                <aside class="filter-sidebar">
+
+                    <h3>Filter Products</h3>
+
+                    <div class="filter-group">
+
+                        <label>Maximum Price</label>
+
+                        <input
+                            type="range"
+                            id="priceRange"
+                            min="1000"
+                            max="50000"
+                            value="50000"
+                            step="500"
+                        >
+
+                        <div class="price-values">
+
+                            <span>Rs. 1,000</span>
+
+                            <strong id="priceValue">
+                                Rs. 50,000
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <button id="clearFilters" class="clear-filter">
+                        Clear Filters
+                    </button>
+
+                </aside>
+
+
+                
+
+                <div class="products-area">
+
+                    <div id="productsGrid" class="products-grid"></div>
+
+                    <p id="noProducts" class="no-products">
+                        No products found.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="about-section" id="about">
+
+            <div class="about-container">
+
+                <div>
+
+                    <span class="section-label">
+                        WHY SHOPHUB
+                    </span>
+
+                    <h2>
+                        Shopping made simple,
+                        reliable and enjoyable.
+                    </h2>
+
+                    <p>
+                        We bring quality products from trusted
+                        brands together in one convenient place.
+                        Our goal is to make online shopping
+                        simple and reliable.
+                    </p>
+
+                    <a href="#products" class="btn btn-primary">
+                        Start Shopping
+                    </a>
+
+                </div>
+
+
+                <div class="about-stats">
+
+                    <div>
+                        <strong>10,000+</strong>
+                        <span>Products</span>
+                    </div>
+
+                    <div>
+                        <strong>25,000+</strong>
+                        <span>Happy Customers</span>
+                    </div>
+
+                    <div>
+                        <strong>99%</strong>
+                        <span>Positive Reviews</span>
+                    </div>
+
+                    <div>
+                        <strong>24/7</strong>
+                        <span>Customer Support</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <div class="overlay" id="overlay"></div>
+
+    <aside class="cart-sidebar" id="cartSidebar">
+
+        <div class="cart-header">
+
+            <div>
+                <span>YOUR BAG</span>
+                <h2>Shopping Cart</h2>
+            </div>
+
+            <button id="closeCart" class="close-btn">
+
+                <svg viewBox="0 0 24 24">
+                    <path d="M6 6L18 18"></path>
+                    <path d="M18 6L6 18"></path>
+                </svg>
+
+            </button>
+
+        </div>
+
+
+        <div id="cartItems" class="cart-items"></div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <span>Subtotal</span>
+
+                <strong id="cartTotal">
+                    Rs. 0
+                </strong>
+
+            </div>
+
+            <button id="checkoutBtn" class="checkout-btn">
+                Proceed to Checkout
+            </button>
+
+            <button id="continueShopping" class="continue-btn">
+                Continue Shopping
+            </button>
+
+        </div>
+
+    </aside>
+
+
+
+    <div class="modal" id="productModal">
+
+        <div class="modal-content product-modal">
+
+            <button class="modal-close" data-close="productModal">
+                ×
+            </button>
+
+            <div id="productDetails"></div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="modal" id="wishlistModal">
+
+        <div class="modal-content">
+
+            <button class="modal-close" data-close="wishlistModal">
+                ×
+            </button>
+
+            <span class="section-label">
+                YOUR FAVORITES
+            </span>
+
+            <h2>Wishlist</h2>
+
+            <div id="wishlistItems" class="wishlist-items"></div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="modal" id="checkoutModal">
+
+        <div class="modal-content checkout-modal">
+
+            <button class="modal-close" data-close="checkoutModal">
+                ×
+            </button>
+
+            <span class="section-label">
+                SECURE CHECKOUT
+            </span>
+
+            <h2>Complete Your Order</h2>
+
+            <form id="checkoutForm">
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label>Full Name</label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            placeholder="Enter your name"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label>Email Address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="you@example.com"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Delivery Address</label>
+
+                    <textarea
+                        id="address"
+                        placeholder="Enter your complete address"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label>City</label>
+
+                        <input
+                            type="text"
+                            id="city"
+                            placeholder="Islamabad"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Phone</label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="03XX-XXXXXXX"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <button type="submit" class="checkout-btn">
+                    Place Order
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="modal" id="successModal">
+
+        <div class="modal-content success-modal">
+
+            <div class="success-icon">
+
+                <svg viewBox="0 0 24 24">
+                    <path d="M5 12L10 17L20 7"></path>
+                </svg>
+
+            </div>
+
+            <h2>Order Confirmed!</h2>
+
+            <p>
+                Thank you for your purchase.
+                Your order has been successfully placed.
+            </p>
+
+            <button
+                class="checkout-btn"
+                data-close="successModal"
+            >
+                Continue Shopping
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="toast" class="toast"></div>
+
+
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo">
+                    Shop<span>Hub</span>
+                </a>
+
+                <p>
+                    Modern shopping for modern lifestyles.
+                    Quality products, trusted service.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Shop</h4>
+
+                <a href="#products">All Products</a>
+                <a href="#categories">Categories</a>
+                <a href="#products">New Arrivals</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Company</h4>
+
+                <a href="#about">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Support</h4>
+
+                <a href="#">Help Center</a>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © ShopHub. All rights reserved.
+            </p>
+
+            <p>
+                Designed for modern shopping.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
